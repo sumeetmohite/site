@@ -19123,6 +19123,10 @@ video {
   transition-duration: 1000ms;
 }
 
+.duration-2000{
+  transition-duration: 2000ms;
+}
+
 .delay-75{
   transition-delay: 75ms;
 }
@@ -19153,6 +19157,10 @@ video {
 
 .delay-1000{
   transition-delay: 1000ms;
+}
+
+.delay-2000{
+  transition-delay: 2000ms;
 }
 
 @keyframes spin{
@@ -19186,6 +19194,40 @@ video {
   }
 }
 
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+
+  50%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  100%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes refloat{
+  0%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  50%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+
+  100%{
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
 .animate-none{
   animation: none;
 }
@@ -19204,6 +19246,14 @@ video {
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+.animate-float{
+  animation: float 3s infinite;
+}
+
+.animate-refloat{
+  animation: refloat 3s infinite;
 }
 
 @media (min-width: 640px){
@@ -37751,6 +37801,10 @@ video {
     transition-duration: 1000ms;
   }
 
+  .sm\:duration-2000{
+    transition-duration: 2000ms;
+  }
+
   .sm\:delay-75{
     transition-delay: 75ms;
   }
@@ -37783,6 +37837,10 @@ video {
     transition-delay: 1000ms;
   }
 
+  .sm\:delay-2000{
+    transition-delay: 2000ms;
+  }
+
   .sm\:animate-none{
     animation: none;
   }
@@ -37801,6 +37859,14 @@ video {
 
   .sm\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .sm\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 }
 
@@ -56349,6 +56415,10 @@ video {
     transition-duration: 1000ms;
   }
 
+  .md\:duration-2000{
+    transition-duration: 2000ms;
+  }
+
   .md\:delay-75{
     transition-delay: 75ms;
   }
@@ -56381,6 +56451,10 @@ video {
     transition-delay: 1000ms;
   }
 
+  .md\:delay-2000{
+    transition-delay: 2000ms;
+  }
+
   .md\:animate-none{
     animation: none;
   }
@@ -56399,6 +56473,14 @@ video {
 
   .md\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .md\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .md\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 }
 
@@ -74947,6 +75029,10 @@ video {
     transition-duration: 1000ms;
   }
 
+  .lg\:duration-2000{
+    transition-duration: 2000ms;
+  }
+
   .lg\:delay-75{
     transition-delay: 75ms;
   }
@@ -74979,6 +75065,10 @@ video {
     transition-delay: 1000ms;
   }
 
+  .lg\:delay-2000{
+    transition-delay: 2000ms;
+  }
+
   .lg\:animate-none{
     animation: none;
   }
@@ -74997,6 +75087,14 @@ video {
 
   .lg\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .lg\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .lg\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 }
 
@@ -93545,6 +93643,10 @@ video {
     transition-duration: 1000ms;
   }
 
+  .xl\:duration-2000{
+    transition-duration: 2000ms;
+  }
+
   .xl\:delay-75{
     transition-delay: 75ms;
   }
@@ -93577,6 +93679,10 @@ video {
     transition-delay: 1000ms;
   }
 
+  .xl\:delay-2000{
+    transition-delay: 2000ms;
+  }
+
   .xl\:animate-none{
     animation: none;
   }
@@ -93595,5 +93701,13 @@ video {
 
   .xl\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .xl\:animate-float{
+    animation: float 3s infinite;
+  }
+
+  .xl\:animate-refloat{
+    animation: refloat 3s infinite;
   }
 }

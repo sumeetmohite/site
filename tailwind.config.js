@@ -664,6 +664,7 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms',
+      '2000': '2000ms',
     },
     transitionDelay: {
       '75': '75ms',
@@ -674,6 +675,7 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms',
+      '2000': '2000ms',
     },
     animation: {
       none: 'none',
@@ -681,6 +683,8 @@ module.exports = {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
+      float:"float 3s infinite",
+      refloat:"refloat 3s infinite",
     },
     keyframes: {
       spin: {
@@ -702,6 +706,35 @@ module.exports = {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
+      float:{
+        '0%': {
+          transform: 'translateY(0px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+        '50%': {
+          transform: 'translateY(-20px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+        '100%': {
+          transform: 'translateY(0px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+      },
+      refloat:{
+        '0%': {
+          transform: 'translateY(-20px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+        '50%': {
+          transform: 'translateY(0px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+        '100%': {
+          transform: 'translateY(-20px)',
+          animationTimingFunction: 'ease-in-out',
+        },
+
+      }
     },
   },
   variants: {
