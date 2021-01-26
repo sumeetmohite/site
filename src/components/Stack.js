@@ -4,7 +4,8 @@ import content from '../content';
 
 const Stack = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center font-dosis">
+        <div className="min-h-screen flex flex-col items-center justify-center font-dosis" 
+        id="stack">
         <h1 className="text-5xl font-bold">
             Stack I use</h1>
             <div className="flex flex-wrap justify-center mt-10">
