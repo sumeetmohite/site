@@ -22,7 +22,7 @@ export default function Navigation() {
           </h1>
         </ScrollLink>
 
-        <div className="text-white text-xl">
+        <div className="text-white text-xl font-bold">
           {content.nav.links.map((link, index) => {
             return (
               <ScrollLink to={link.to} smooth={true}>

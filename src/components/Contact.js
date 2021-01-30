@@ -1,6 +1,9 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Link } from 'react-scroll';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faInstagram, faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import content from '../content';
 import useWindowPosition from '../hook/useWindowPosition';
@@ -24,7 +27,7 @@ export default function Contact() {
           src={content.contact.img}
           placeholderSrc={content.contact.imgPlaceholder}
           alt="profile"
-          style={{borderRadius:'50%', marginTop:'0px'}}
+          style={{borderRadius:'50%', border:'2px solid white', marginTop:'0px'}}
           width="300px"
           className="mt-10 transtion duration-2000 ease-in-out mx-auto"
         />
@@ -48,18 +51,41 @@ export default function Contact() {
               animated ? '' : 'translate-y-10 opacity-0'
             } transform transition duration-3000 `}
           >
-            {content.contact.socials.map((social, index) => {
-              return (
-                <LazyLoadImage
-                  effect="blur"
-                  className="m-2"
-                  width="50px"
-                  key={index}
-                  src={social.img}
-                  alt={social.alt}
-                />
-              );
-            })}
+            <span className="back-to-top">
+          <Link to="mywork" smooth duration={1000}>
+            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+          </Link>
+        </span>
+        <div className="social-links">
+                <a
+                  href="https://github.com/sumeetmohite"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} style={{color:'white', fontSize:'200%', margin:'1rem 1rem 1rem 1rem'}} />
+                </a>
+                <a
+                  href="https://linkedin.com/in/sumeetmohite"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} style={{color:'white', fontSize:'200%', margin:'1rem 1rem 1rem 1rem'}} />
+                </a>
+                <a
+                  href="https://twitter.com/sumeetmohite9"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faTwitter} style={{color:'white', fontSize:'200%', margin:'1rem 1rem 1rem 1rem'}} />
+                </a>
+                <a
+                  href="https://instagram.com/sumeetmohite9"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faInstagram} style={{color:'white', fontSize:'200%', margin:'1rem 1rem 1rem 1rem'}} />
+                </a>
+        </div>
           </div>
         </div>
       </div>

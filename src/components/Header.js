@@ -1,6 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import content from '../content';
 import useStartAnimation from '../hook/useStartAnimation';
@@ -20,15 +20,16 @@ export default function Header() {
       id="header"
     >
       <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
-        <div className="w-full md:w-2/5 ">
+        {/* <div className="w-full md:w-2/5 ">
           <LazyLoadImage
             src={content.header.img}
+            style={{border:'5px solid white', borderRadius:'1%'}}
             alt="profile"
             className={`w-full mx-auto`}
             effect="blur"
             placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}
           />
-        </div>
+        </div> */}
 
         <div className="font-dosis w-full md:w-3/5 text-center md:text-left ">
           <h2
@@ -56,7 +57,7 @@ export default function Header() {
 
           <ScrollLink to="mywork" smooth={true}>
             <button
-              className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${
+              className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white font-bold rounded-lg mt-10 hover:bg-indigo-300 transform  ${
                 animated ? 'translate-y-0' : styleTranslate
               } ${transition(3500)}`}
             >
