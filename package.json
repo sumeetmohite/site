@@ -1,4 +1,5 @@
 {
+  "homepage":"https://sumeetmohite.github.io/tailwindfolio",
   "name": "beginners-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "social-media-icons-react": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
     "postcss-cli": "^8.1.0",
     "tailwindcss": "^1.9.5"
   }

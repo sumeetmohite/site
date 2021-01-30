@@ -24,27 +24,25 @@ export default {
   work: {
     title: 'Projects',
     projects: [
-    {  img: process.env.PUBLIC_URL + '/assets/taskwide.jpg',
+    { img: process.env.PUBLIC_URL + '/assets/taskwide.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',
     projectName: 'Task Tracker ',
     desc:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      'A simple web application to keep a track of your daily activities built with ReactJs and uses JSON server to store the tasks locally.',
     },
-    {  img: process.env.PUBLIC_URL + '/assets/music-wide.jpg',
+    { img: process.env.PUBLIC_URL + '/assets/music-wide.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',
-    projectName: 'Task Tracker ',
-    desc:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    },
-    {  img: process.env.PUBLIC_URL + '/assets/movies.jpg',
+    projectName: 'Waves Music',
+    desc:'A Music player application built using ReactJs, Sass & Styled components . Songs were taken from the library of chillhop.com. '
+      },
+    { img: process.env.PUBLIC_URL + '/assets/movies.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',
-    projectName: 'Task Tracker ',
-    desc:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    },
+    projectName: 'Movie Library',
+    desc:'Movie app made with React.Uses OMDB api to search movies & you can add to favourites and they are stored in Local Storage.'
+      },
     ]
   },
   stack: {
