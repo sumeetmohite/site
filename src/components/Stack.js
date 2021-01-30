@@ -22,7 +22,7 @@ export default function Stack() {
                 index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
               }`}
             >
-              <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} />
+              <LazyLoadImage effect="blur" src={tech.img} url={tech.url} alt={tech.alt} />
             </span>
           ))}
         </div>
