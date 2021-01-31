@@ -110,7 +110,8 @@ export default function Work() {
           alt="rocket"
           className="mr-5"
         />
-        <a className="text-lg" href="https://github.com/sumeetmohite/task-tracker/">Source code</a>
+        <a className="text-lg" href="https://github.com/sumeetmohite/task-tracker/"
+        target="_blank" rel="noopener noreferrer">Source code</a>
         
       </button>
     </div>
@@ -158,7 +159,8 @@ export default function Work() {
           alt="rocket"
           className="mr-5"
         />
-        <p className="text-lg" href="https://github.com/sumeetmohite/movie-app">Source code</p>
+        <a className="text-lg" href="https://github.com/sumeetmohite/movie-app/"
+        target="_blank" rel="noopener noreferrer">Source code</a>
       </button>
     </div>
         </div>
