@@ -24,19 +24,19 @@ export default {
   work: {
     title: 'Projects',
     projects: [
-    { img: process.env.PUBLIC_URL + '/assets/taskwide.jpg',
-    imgPlaceholder:
-      process.env.PUBLIC_URL + '/assets/loading.gif',
-    projectName: 'Task Tracker ',
-    desc:
-      'A simple web application to keep a track of your daily activities built with ReactJs and uses JSON server to store the tasks locally.',
-    },
     { img: process.env.PUBLIC_URL + '/assets/music-wide.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',
     projectName: 'Waves Music',
     desc:'A Music player application built using ReactJs, Sass & Styled components . Songs were taken from the library of chillhop.com. '
       },
+    { img: process.env.PUBLIC_URL + '/assets/taskwide.jpg',
+    imgPlaceholder:
+      process.env.PUBLIC_URL + '/assets/loading.gif',
+    projectName: 'Task Tracker ',
+    desc:
+      'A simple web app to keep a track of your daily activities. Built with ReactJs and uses JSON server to store tasks locally.',
+    },
     { img: process.env.PUBLIC_URL + '/assets/movies.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',

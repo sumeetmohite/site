@@ -59,7 +59,8 @@ export default function Work() {
           alt="rocket"
           className="mr-5"
         />
-        <p className="text-lg">See Live</p>
+        <a className="text-lg" href="https://sumeetmohite.github.io/Wavz/"
+        target="_blank" rel="noopener noreferrer" >See Live</a>
       </button>
     </div>
         </div>
@@ -109,7 +110,7 @@ export default function Work() {
           alt="rocket"
           className="mr-5"
         />
-        <p className="text-lg">See Live</p>
+        <a className="text-lg" href="https://sumeetmohite.github.io/task-tracker/">See Live</a>
       </button>
     </div>
         </div>
