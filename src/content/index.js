@@ -27,8 +27,14 @@ export default {
     { img: process.env.PUBLIC_URL + '/assets/music-wide.jpg',
     imgPlaceholder:
       process.env.PUBLIC_URL + '/assets/loading.gif',
-    projectName: 'Waves Music',
+    projectName: 'Wavz Music',
     desc:'A Music player application built using ReactJs, Sass & Styled components . Songs were taken from the library of chillhop.com. '
+      },
+    { img: process.env.PUBLIC_URL + '/assets/weather.jpg',
+    imgPlaceholder:
+      process.env.PUBLIC_URL + '/assets/loading.gif',
+    projectName: 'Weather App',
+    desc:'A Weather site build with ReactJs . It gets weather data using the Openweathermap Api and displays the weather in a card. '
       },
     { img: process.env.PUBLIC_URL + '/assets/taskwide.jpg',
     imgPlaceholder:
