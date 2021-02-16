@@ -14,7 +14,8 @@ export default function Header() {
   return (
     <div
       style={{
-        background: '#091C29',
+        background: "linear-gradient(to right, #3a6186, #89253e)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
       }}
       className="min-h-screen flex items-center justify-center"
       id="header"
@@ -33,7 +34,7 @@ export default function Header() {
 
         <div className="font-dosis w-full md:w-3/5 text-center md:text-left ">
           <h2
-            className={`text-3xl md:text-4xl lg:text-6xl text-indigo-200 font-bold transform ${
+            className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
               animated ? 'translate-y-0' : styleTranslate
             }  ${transition(2000)} `}
           >
@@ -42,7 +43,7 @@ export default function Header() {
             {content.header.text[1]}
           </h2>
           <h1
-            className={`text-2xl md:text-4xl text-gray-400 transform ${
+            className={`text-2xl md:text-4xl text-white transform ${
               animated ? 'translate-y-0' : styleTranslate
             } ${transition(3000)} `}
           >
@@ -57,7 +58,7 @@ export default function Header() {
 
           <ScrollLink to="mywork" smooth={true}>
             <button
-              className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white font-bold rounded-lg mt-10 hover:bg-indigo-300 transform  ${
+              className={` animate-bounce bg-blue-900 px-10 py-3 text-lg uppercase text-white font-bold rounded-lg mt-10 hover:bg-indigo-300 transform  ${
                 animated ? 'translate-y-0' : styleTranslate
               } ${transition(3500)}`}
             >

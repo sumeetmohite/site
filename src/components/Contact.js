@@ -18,7 +18,7 @@ export default function Contact() {
       <div
         style={{
           minHeight: '50vh',
-          background: '#091C29',
+          background: 'linear-gradient(to right, #0f0c29, #302b63, #24243e)',
         }}
         className="w-full md:w-4/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
       >

@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <div
       style={{
-        background: '#091C29',
+        background: "linear-gradient(to right, #3a6186, #89253e)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }}
       className="font-dosis fixed top-0 w-screen z-40"
     >
@@ -18,7 +18,7 @@ export default function Navigation() {
         >
           <h1>
             {content.nav.logo}
-            <span className="h-3 w-3 bg-red-400 inline-block ml-2  rounded-full"></span>
+            <span className="h-3 w-3 bg-red-800 inline-block ml-2  rounded-full"></span>
           </h1>
         </ScrollLink>
 
