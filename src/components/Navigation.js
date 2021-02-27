@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right, #3a6186, #89253e)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: "#00070B"
       }}
       className="font-dosis fixed top-0 w-screen z-40"
     >
