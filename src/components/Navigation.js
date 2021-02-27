@@ -16,10 +16,10 @@ export default function Navigation() {
           smooth={true}
           className="text-3xl  font-bold text-white flex-1 cursor-pointer"
         >
-          <h1>
+          {/* <h1>
             {content.nav.logo}
             <span className="h-3 w-3 bg-red-800 inline-block ml-2  rounded-full"></span>
-          </h1>
+          </h1> */}
         </ScrollLink>
 
         <div className="text-white text-xl font-bold">
