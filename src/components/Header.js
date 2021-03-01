@@ -14,8 +14,7 @@ export default function Header() {
   return (
     <div
       style={{
-        background: "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.418)),url(assets/bg.jpg)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      
+        background: "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.418)),url(assets/bghigh.jpg)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}
@@ -23,17 +22,6 @@ export default function Header() {
       id="header"
     >
       <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
-         {/* <div className="w-full md:w-2/5 ">
-          <LazyLoadImage
-            src={content.header.img}
-            style={{border:'5px solid white', borderRadius:'1%'}}
-            alt="profile"
-            className={`w-full mx-auto`}
-            effect="blur"
-            placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}
-          />
-        </div>  */}
-
         <div className="font-dosis w-full md:w-5/5 text-center md:text-center ">
           <h2
             className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
