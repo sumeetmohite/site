@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import content from '../content';
 
@@ -6,11 +7,15 @@ export default function Navigation() {
   return (
     <div
       style={{
-        background: "#00070B"
+        background: "linear-gradient(to right,#061161,#780206)"
       }}
       className="font-dosis fixed top-0 w-screen z-40"
     >
-      <div className="flex items-center w-10/12  mx-auto py-3">
+      <motion.div className="flex items-center w-10/12  mx-auto py-3"
+          initial={{x:'-100vw'}}
+          animate={{x:0}}
+          transition={{type:'spring', delay:1, duration:1}}
+      >
         <ScrollLink
           to="header"
           smooth={true}
@@ -33,7 +38,7 @@ export default function Navigation() {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
