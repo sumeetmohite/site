@@ -7,9 +7,9 @@ export default function Navigation() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right,#061161,#780206)"
+        backgroundColor: "#121212"
       }}
-      className="font-dosis fixed top-0 w-screen z-40"
+      className="font-dosis absolute top-0 w-screen z-40"
     >
       <motion.div className="flex items-center w-10/12  mx-auto py-3"
           initial={{x:'-100vw'}}
@@ -31,7 +31,7 @@ export default function Navigation() {
           {content.nav.links.map((link, index) => {
             return (
               <ScrollLink to={link.to} smooth={true}>
-                <span className="mr-4 cursor-pointer" key={index}>
+                <span className="mr-6 cursor-pointer" key={index}>
                   {link.text}
                 </span>
               </ScrollLink>

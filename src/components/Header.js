@@ -15,9 +15,8 @@ export default function Header() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right,#061161,#780206)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        // backgroundSize: 'cover',
-        // backgroundRepeat: 'no-repeat'
+        backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(${process.env.PUBLIC_URL + '/assets/main-bg.jpg'})`,
+        backgroundRepeat: 'no-repeat',
       }}
       className="min-h-screen flex items-center justify-center"
       id="header"
@@ -29,7 +28,7 @@ export default function Header() {
           transition={{type:'spring', delay:1, duration:1}}
 
         >
-          <h2
+          <h1
             className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
               animated ? 'translate-y-0' : styleTranslate
             }  ${transition(2000)} `}
@@ -37,8 +36,8 @@ export default function Header() {
             {content.header.text[0]}
             <br />
             {content.header.text[1]}
-          </h2>
-          <h1
+          </h1>
+          <h2
             className={`text-2xl md:text-4xl text-white transform ${
               animated ? 'translate-y-0' : styleTranslate
             } ${transition(3000)} `}
@@ -50,7 +49,7 @@ export default function Header() {
               className="inline-block"
               wrapper="p"
             />
-          </h1>
+          </h2>
 
           <ScrollLink to="mywork" smooth={true}>
             <button
